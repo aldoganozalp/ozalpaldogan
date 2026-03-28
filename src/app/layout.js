@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ContactBubble from "@/components/ContactBubble";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col font-sans relative">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--color-accent-glow),_transparent_40%)] pointer-events-none" />
         {children}
+        <ContactBubble />
       </body>
     </html>
   );
