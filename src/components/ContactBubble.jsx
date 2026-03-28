@@ -19,7 +19,7 @@ export default function ContactBubble() {
       // Form submission to Netlify
       const formData = new FormData(formRef.current);
 
-      fetch('/', {
+      fetch('/contact.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData).toString()
