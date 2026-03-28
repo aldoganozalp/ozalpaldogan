@@ -83,11 +83,11 @@ export default function Skills() {
                     className="group"
                   >
                     {typeof skill === 'string' ? (
-                      <span className="inline-block px-4 py-2 bg-surface hover:bg-surface-hover text-text-primary border border-white/5 rounded-lg text-sm transition-colors cursor-default">
+                      <span className="inline-block px-4 py-2 bg-surface text-text-primary border border-white/5 rounded-lg text-sm transition-all duration-300 ease-in-out hover:bg-surface-hover hover:scale-105 hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] hover:relative hover:z-10 cursor-default">
                         {skill}
                       </span>
                     ) : (
-                      <span className="inline-block px-4 py-2 bg-surface hover:bg-surface-hover text-text-primary border border-white/5 rounded-lg text-sm transition-colors cursor-default">
+                      <span className="inline-block px-4 py-2 bg-surface text-text-primary border border-white/5 rounded-lg text-sm transition-all duration-300 ease-in-out hover:bg-surface-hover hover:scale-105 hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] hover:relative hover:z-10 cursor-default">
                         {skill.name} <span className="text-accent font-semibold ml-2 text-xs">{skill.level}</span>
                       </span>
                     )}
